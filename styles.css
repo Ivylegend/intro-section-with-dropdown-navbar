@@ -1,0 +1,261 @@
+ /* Feel free to remove these styles or customise in your own stylesheet 👍 -- */
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}    
+
+main{
+    padding: 30px;
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+img{
+    max-width: 100%;
+}
+
+nav{
+    padding-bottom: 30px;
+    color: hsl(0, 0%, 41%);
+}
+
+.features-nav{
+    position: relative;
+    right: 500px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+ul{
+    list-style: none;
+    float: right;
+    word-spacing: 20px;
+}
+
+li, li:hover{
+    display: inline-block;
+    cursor: pointer;
+}
+
+li:hover{
+color: black;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-stretch: ultra-expanded;
+    width: 340px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: hsl(0, 0%, 41%);
+}
+
+.features img{
+    position: relative;
+    right: 10px;
+}
+
+.company img{
+    position: relative;
+    right: 10px;
+}
+
+button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.credits img{
+    padding-right: 30px;
+    margin-bottom: 100px;
+}
+
+.learn{
+    margin-bottom: 100px;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+}
+
+.learn:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid;
+    font-weight: bold;
+    transition: all 1.0s;
+}
+
+.register{
+    background-color: transparent;
+}
+
+.text p{
+    width: 420px;
+}
+
+.hero{
+    width: 440px;
+    position: relative;
+    bottom: 65px;
+}
+
+.dropdown{
+    display: none;
+}
+
+.icon-arrowup{
+    display: none;
+}
+
+.text{
+    margin-top: 35px;
+
+}
+
+.drop{
+   display: flex;
+   flex-direction: row;
+  
+}
+
+.dropinner img{
+    margin-right: 10px;
+}
+
+.dropinner{
+    background-color: white;
+    margin-right: 30px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.one{
+    display: none;
+    bottom: 775px;
+   right: 20px;
+   position: relative;
+}
+
+.dropinner li{
+    display: block;
+    word-spacing: normal;
+    line-height: 2;
+    color: hsl(0, 0%, 41%);
+}
+
+.two{
+    height: 120px;
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 280px;
+}
+
+.hero2{
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 98%);
+    }
+
+    .container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        text-align: center;
+        margin: 20px  auto;
+    }
+
+    .dropdown {
+        display: inline-block;
+        position: relative;
+        /* left: 370px; */
+        float: right;
+    }
+
+    .logo{
+        position: fixed;
+    }
+
+    .open{
+        /* display: none; */
+        position: fixed;
+    }
+
+    .close{
+        display: none;
+        float: right;
+        position: fixed;
+    }
+
+    .hero{
+        display: none;
+    }
+
+    .hero2{
+        display: block;
+        max-width: 400px;
+    }
+
+    li{
+        display: block;
+        /* color: black; */
+        line-height: 2.5;
+        left: 480px;
+        position: relative;
+        justify-items: left;
+    }
+
+    .login-nav{
+        position: relative;
+        right: 480px;
+        text-align: center;
+    }
+
+    ul{
+        float: none;
+        background-color: white;
+        height: 100vh;
+        width: 300px;
+        position: fixed;
+        right: 0px;
+        top: 0;
+        padding: 50px;
+        display: none;
+    }
+
+    .register{
+        width: 100%;
+    }
+
+}
